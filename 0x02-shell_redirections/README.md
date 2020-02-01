@@ -1,1 +1,1 @@
-This is a code for Shell, I/O Redirections and filters
+This is a project to learn about  Shell, I/O Redirections and filters
