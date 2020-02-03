@@ -1,2 +1,2 @@
 #!/bin/bash
-find ./* -type f,d -empty | cut -f 1 -d "."
+find ./* -type f,d -empty -print "%f\n" | cut -f 1 -d "."
