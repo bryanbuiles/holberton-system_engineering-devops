@@ -1,0 +1,21 @@
+total 76
+drwxr-xr-x 2 bryan bryan 4096 feb  1 17:04 .
+drwxr-xr-x 6 bryan bryan 4096 feb  1 13:46 ..
+-rwxr-xr-x 1 bryan bryan   31 feb  1 13:57 0-hello_world
+-rw-r--r-- 1 bryan bryan   31 feb  1 13:56 0-hello_world~
+-rwxr-xr-x 1 bryan bryan   31 feb  1 15:02 1-confused_smiley
+-rwxr-xr-x 1 bryan bryan   32 feb  1 15:01 1-confused_smiley~
+-rwxr-xr-x 1 bryan bryan   29 feb  1 15:09 2-hellofile
+-rwxr-xr-x 1 bryan bryan   28 feb  1 15:07 2-hellofile~
+-rwxr-xr-x 1 bryan bryan   39 feb  1 15:13 3-twofiles
+-rw-r--r-- 1 bryan bryan   39 feb  1 15:13 3-twofiles~
+-rwxr-xr-x 1 bryan bryan   29 feb  1 15:18 4-lastlines
+-rwxr-xr-x 1 bryan bryan   29 feb  1 15:19 5-firstlines
+-rwxr-xr-x 1 bryan bryan   37 feb  1 15:45 6-third_line
+-rwxr-xr-x 1 bryan bryan   45 feb  1 15:41 6-third_line~
+-rwxr-xr-x 1 bryan bryan   94 feb  1 16:59 7-file
+-rwxr-xr-x 1 bryan bryan   93 feb  1 16:55 7-file~
+-rwxr-xr-x 1 bryan bryan   37 feb  1 17:03 8-cwd_state
+-rw-r--r-- 1 bryan bryan   17 feb  1 16:59 \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 bryan bryan    0 feb  1 17:04 ls_cwd_content
+-rw-r--r-- 1 bryan bryan   69 feb  1 13:47 README.md
