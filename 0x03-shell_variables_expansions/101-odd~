@@ -1,0 +1,2 @@
+#!/bin/bash
+cat | grep -n . | grep ":" | cut -d -f2
