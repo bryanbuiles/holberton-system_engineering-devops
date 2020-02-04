@@ -1,2 +1,2 @@
 #!/bin/bash
-cat | grep -n . | grep [13579]":" | cut -d":"-f2- 
+cat | grep -n . | grep [13579] ":" | cut -d ":" -f2- 
