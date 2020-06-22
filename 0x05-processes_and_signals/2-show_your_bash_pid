@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script is display a status and ID of current procces
+
+ps auxf | grep "bash"
+# shellcheck disable=SC2009
