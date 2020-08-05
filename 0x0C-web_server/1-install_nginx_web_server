@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Connects to the server
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo service nginx start
+echo "Holberton School" | sudo tee /var/www/html/index.nginx-debian.html
+sudo service nginx restart
