@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Connects to the server
+# Install the server
 apt-get -y update
 apt-get -y upgrade
 apt-get -y install nginx
