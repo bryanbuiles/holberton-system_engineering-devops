@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# 404 not found
+Redirigir="\\\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}\n"
+err404="\\\n\terror_page 404 /custom_404.html;\n\tlocation = /custom_404.html {\n\t\troot /var/www/html;\n\t\tinternal;\n\t}"
+HEADER="\\\n\tadd_header X-Served-By \$HOSTNAME;"
+File="/etc/nginx/sites-available/default"
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo service nginx start
+echo "Holberton School" | sudo tee /var/www/html/index.nginx-debian.html
+sudo sed -i "35i $Redirigir" $File
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html
+sudo sed -i "38i $err404" $File
+sudo sed -i "44i $HEADER" $File
+sudo service nginx restart
