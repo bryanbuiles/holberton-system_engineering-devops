@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Script that will display information about subdomains.
-array=(www lb-01 web-01 web-02)
+array=("www" "lb-01" "web-01" "web-02")
 value="$2"
 echo_var() {
     DIG=$(dig "$DOM" | grep -A1 'ANSWER SECTION:' | tail -1)
@@ -12,12 +12,12 @@ if [ "$#" -ne 2 ]; then
     for i in "${array[@]}"; do
         DOM="$i.$1"
         echo_var "$DOM"
-        echo "The subdomain "$i" is a "$RECORD" record and points to "$IP""
+        echo "The subdomain $i is a $RECORD record and points to $IP"
     done
 elif [ "$#" -ne 3 ]; then
-    if [[ " ${array[@]} " =~ " ${value} " ]]; then
+    if [[ ${array[*]} =~ ${value} ]]; then
         DOM="$2.$1"
         echo_var "$DOM"
-        echo "The subdomain "$2" is a "$RECORD" record and points to "$IP""
+        echo "The subdomain $2 is a $RECORD record and points to $IP"
     fi
 fi
