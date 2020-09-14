@@ -19,8 +19,9 @@ if __name__ == "__main__":
             lista = []
             for i in html2.json():
                 if j.get("id") == i.get("userId"):
-                    dictionaryin = {"username": j.get("username"), "task": i.get("title"), "completed": i.get(
-                        "completed")}
+                    dictionaryin = {"username": j.get("username"),
+                                    "task": i.get("title"),
+                                    "completed": i.get("completed")}
                     lista.append(dictionaryin)
             dictionary[j.get("id")] = lista
         json.dump(dictionary, f)
