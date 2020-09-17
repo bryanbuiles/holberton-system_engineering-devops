@@ -1,8 +1,10 @@
+#!/usr/bin/python3
+"""queries the Reddit API"""
 import requests
 
 
 def recurse(subreddit, hot_list=[], aftervalue="aftervalue"):
-    """total subs"""
+    """total hot post"""
     header = {"User-Agent": "Bryan"}
     if aftervalue == "aftervalue":
         url = "https://www.reddit.com/r/" + subreddit + "/hot/.json"
